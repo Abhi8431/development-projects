@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="page1" id="page1">
+        <div class="menu-box" id="menuBox">
+            <ul>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#page2">center-Div</a></li>
+                <li><a href="#page3">Music</a></li>
+                <li><a href="#">logic</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="part1">
+                <div class="hello">welcome</div> 
+            </div>
+            <div class="part2">
+                <div class="hello">scroll down</div>
+                 <div class="image1">
+                    <img src="./scroll.png" alt="">
+                </div>
+            </div>
+        </div>
+        <img src="./images-removebg-preview.png" id="menuIcon" alt="menu">
+    </section>
+    <section class="page2" id="page2">
+        <div class="hello">read the para</div>
+        <div class="centred-div">
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dignissimos corrupti praesentium laudantium nostrum excepturi beatae quisquam quae magni ea,
+                 repellat natus eaque laboriosam nam et nisi reprehenderit dolores incidunt ipsum.</p>
+        </div>
+    </div>
+    </section>
+   <sectin class="page3" id="page3">
+    <div class="hello">listen some music</div>
+    <div class="music-page">
+    <div class="music-img">
+        <img src="./allen-walker.jpg" alt="">
+    </div>
+    <audio controls>
+        <source src="./WhatsApp Audio 2023-02-25 at 11.40.05 PM.aac" type="audio/ogg/aac">
+        <source src="./WhatsApp Audio 2023-02-25 at 11.40.05 PM.aac" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+   </sectin>
+
+
+
+   <!-- hanburger-menubar -->
+
+   <script>
+let menuBox = document.getElementById("menuBox");
+let menuIcon = document.getElementById("menuIcon");
+
+menuIcon.onclick =function(){
+    menuBox.classList.toggle("open-menu")
+    if(menuBox.classList.contains("open-menu")){
+        menuIcon.src = "menuclosed.jpg"
+    }
+    else{
+        menuIcon.src = "images-removebg-preview.png"
+    }
+}
+
+   </script>
+</body>
+</html>
